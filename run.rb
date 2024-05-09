@@ -11,7 +11,7 @@ if zip_filename.nil? || zip_filename == ""
   exit(1)
 end
 
-work_dir = "./work_dir"
+work_dir = File.join("./work_dir", zip_filename)
 extracted_dir = File.join(work_dir, "extacted")
 output_dir = File.join(work_dir, "output")
 FileUtils.mkdir_p(extracted_dir)
@@ -94,7 +94,7 @@ csv.each do |row|
   draw = Magick::Draw.new
   draw.pointsize = font_size
 
-  current_y = rectangle_y + caption_padding + (line_height / 2) + (line_height / 3.0)  # Fudge factor
+  current_y = rectangle_y + caption_padding + (line_height / 2) + (line_height / 4)  # Fudge factor
   wrapped_text.each_line do |line|
     draw.fill_opacity(1)
     draw.fill = "#ffffff"
