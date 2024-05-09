@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    csv (3.2.8)
+    observer (0.1.2)
+    pkg-config (1.5.6)
+    rmagick (6.0.0)
+      observer (~> 0.1)
+      pkg-config (~> 1.4)
+    rubyzip (2.3.2)
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+
+DEPENDENCIES
+  csv
+  rmagick
+  rubyzip
+
+BUNDLED WITH
+   2.5.7
