@@ -7,7 +7,7 @@ GEM
     rmagick (6.0.0)
       observer (~> 0.1)
       pkg-config (~> 1.4)
-    rubyzip (2.3.2)
+    rubyzip (3.4.0)
 
 PLATFORMS
   arm64-darwin-23
