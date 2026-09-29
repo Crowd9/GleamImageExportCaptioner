@@ -10,7 +10,7 @@ Takes a Gleam export of media and adds captions with the owner.
 
 # Step 0: Install required tools
 ## Step 0.1:
-Install Ruby, Bundler. I use [rbenv](https://github.com/rbenv/rbenv) to install Ruby 3.3.0 specifically.
+Install Ruby, Bundler. I use [rbenv](https://github.com/rbenv/rbenv) to install Ruby 4.0.0 specifically.
 
 ## Step 0.2: 
 Run `bundle install`

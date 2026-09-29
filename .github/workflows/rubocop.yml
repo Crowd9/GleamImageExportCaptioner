@@ -1,0 +1,24 @@
+name: RuboCop
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # rmagick compiles against ImageMagick during bundle install
+      - name: Install ImageMagick headers
+        run: sudo apt-get update && sudo apt-get install -y libmagickwand-dev
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Run RuboCop
+        run: bundle exec rubocop
