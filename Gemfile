@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
+gem "csv"
 gem "rmagick"
 gem "rubyzip"
-gem "csv"
 
 group :development do
   gem "rubocop", require: false
